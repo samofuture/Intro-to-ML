@@ -41,11 +41,12 @@ if __name__ == "__main__":
         loss = find_loss(theta, x, y)
         j.append(loss)
 
-    print("Thetas:", total_thetas)
-    print("Losses:", total_loss)
     
     total_thetas.append(theta)
     total_loss.append(j[-1])
+
+    print("Thetas:", total_thetas)
+    print("Losses:", total_loss)
 
     plt.plot(j)
     plt.show()
